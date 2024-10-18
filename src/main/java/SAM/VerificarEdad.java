@@ -45,13 +45,11 @@ public class VerificarEdad {
         System.out.println(resultadoAna);
     }
 
-    // Definición de TriFunction como interfaz funcional
     @FunctionalInterface
     public interface TriFunction<T, U, V, R> {
         R apply(T t, U u, V v);
     }
 
-    // Definición de la interfaz Verificar como SAM
     @FunctionalInterface
     public interface Verificar {
         String verificar(String nombre, int edad, LocalDate fechaNacimiento);
